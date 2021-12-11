@@ -17,21 +17,21 @@ namespace AspNETasmxWS {
     public class MediaWS : WebService    {
 
         [WebMethod]
-        public string SaveMedia(User user, Media media)
-        {
+        public string SaveMedia(User user, Requisition requisition) {
+
             return "Hello World";
         }
 
 
         [WebMethod]
-        public string GetMedia(User user, Media media)
-        {
+        public string GetMedia(User user, Requisition requisition) {
+
             return "Hello World";
         }
 
         [WebMethod]
-        public string DeleteMedia(User user, Media media)
-        {
+        public string DeleteMedia(User user, Requisition requisition) {
+
             return "Hello World";
         }
     }
