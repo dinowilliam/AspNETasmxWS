@@ -21,7 +21,7 @@ namespace AspNETasmxWS.Test {
         }
 
         [TestMethod]
-        public void MediaInsertCommand_WhenExecuteInsert_IsFailed() {
+        public void MediaInsertCommand_WhenExecuteInsert_IsFail() {
 
             //Arrange                       
 

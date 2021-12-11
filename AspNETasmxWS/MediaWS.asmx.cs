@@ -24,13 +24,13 @@ namespace AspNETasmxWS {
 
 
         [WebMethod]
-        public string GetMedia(User user, Requisition requisition) {
+        public string GetMedia(User user, Media media) {
 
             return "Hello World";
         }
 
         [WebMethod]
-        public string DeleteMedia(User user, Requisition requisition) {
+        public string DeleteMedia(User user, Media media) {
 
             return "Hello World";
         }
