@@ -5,8 +5,9 @@ using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace AspNETasmxWS.UnityTests.Test
-{
+namespace AspNETasmxWS.UnityTests.Test {
+
+
     [TestClass]
     public class MediaServiceTest {
 

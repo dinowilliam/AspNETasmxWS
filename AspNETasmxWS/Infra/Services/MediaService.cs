@@ -8,6 +8,7 @@ namespace AspNETasmxWS.Infra.Services {
         private readonly IMediaDao _mediaDao;
 
         public MediaService(IMediaDao mediaDao) { 
+
             this._mediaDao = mediaDao;
         }
 
