@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Unity Tests\MediaDaoTest.cs" />
+    <Compile Include="Unity Tests\MediaServiceTest.cs" />
     <Compile Include="Unity Tests\UserLoginCommandTest.cs" />
     <Compile Include="Unity Tests\MediaInsertCommandTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

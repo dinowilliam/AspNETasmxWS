@@ -85,6 +85,8 @@
     <Compile Include="Infra\Services\Contracts\IUserService.cs" />
     <Compile Include="Infra\DataAccess\Contracts\IMediaDao.cs" />
     <Compile Include="Infra\DataAccess\MediaDao.cs" />
+    <Compile Include="Infra\Services\MediaService.cs" />
+    <Compile Include="Infra\Services\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MediaWS.asmx.cs">
       <DependentUpon>MediaWS.asmx</DependentUpon>

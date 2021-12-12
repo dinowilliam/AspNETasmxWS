@@ -2,7 +2,7 @@
 
 namespace AspNETasmxWS.Infra.DataAccess.Contracts
 {
-    internal interface IMediaDao {
+    public interface IMediaDao {
 
         bool SaveMedia(Requisition requisition);
         bool GetMedia(Media media);
