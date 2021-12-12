@@ -35,7 +35,19 @@ namespace AspNETasmxWS.UnityTests.Test
 
             //Assure
             Assert.IsFalse(assured);
+        }
 
+        [TestMethod]
+        public void MediaService_WhenSaveMedia_IsSucceed() {
+
+            //Arrange                       
+            A.CallTo(() => mediaDaoMock.SaveMedia(requisitionMock)).Returns(true);
+
+            //Act
+            var assured = mediaService.SaveMedia(requisitionMock);
+
+            //Assure
+            Assert.IsTrue(assured);
         }
 
         [TestMethod]
@@ -49,7 +61,19 @@ namespace AspNETasmxWS.UnityTests.Test
 
             //Assure
             Assert.IsFalse(assured);
+        }
 
+        [TestMethod]
+        public void MediaService_WhenGetMedia_IsSucceed() {
+
+            //Arrange
+            A.CallTo(() => mediaDaoMock.GetMedia(mediaMock)).Returns(true);
+
+            //Act
+            var assured = mediaService.GetMedia(mediaMock);
+
+            //Assure
+            Assert.IsTrue(assured);
         }
 
         [TestMethod]
@@ -63,7 +87,19 @@ namespace AspNETasmxWS.UnityTests.Test
 
             //Assure
             Assert.IsFalse(assured);
+        }
 
+        [TestMethod]
+        public void MediaService_WhenDeleteMedia_IsSucceed() {
+
+            //Arrange                       
+            A.CallTo(() => mediaDaoMock.DeleteMedia(mediaMock)).Returns(true);
+
+            //Act
+            var assured = mediaService.DeleteMedia(mediaMock);
+
+            //Assure
+            Assert.IsTrue(assured);
         }
 
         [TestCleanup()]
