@@ -71,8 +71,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\Contracts\ICommand.cs" />
+    <Compile Include="Commands\Contracts\IUserLoginCommand.cs" />
+    <Compile Include="Commands\Contracts\IMediaInsertCommand.cs" />
     <Compile Include="Commands\MediaInsertCommand.cs" />
+    <Compile Include="Commands\UserLoginCommand.cs" />
     <Compile Include="Entities\Contracts\IRequisition.cs" />
     <Compile Include="Entities\Contracts\IUser.cs" />
     <Compile Include="Entities\Contracts\IMedia.cs" />
@@ -97,6 +99,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Infra\Contracts\" />
     <Folder Include="Infra\Utilities\" />
   </ItemGroup>
   <PropertyGroup>

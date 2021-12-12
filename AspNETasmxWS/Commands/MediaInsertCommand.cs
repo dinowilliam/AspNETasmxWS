@@ -3,7 +3,7 @@ using AspNETasmxWS.Entities;
 
 namespace AspNETasmxWS.Commands
 {
-    public class MediaInsertCommand : ICommand
+    public class MediaInsertCommand : IMediaInsertCommand
     {
         public bool Execute(Requisition requisition){
             

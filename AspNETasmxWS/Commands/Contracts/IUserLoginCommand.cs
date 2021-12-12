@@ -3,9 +3,10 @@ using System;
 
 namespace AspNETasmxWS.Commands.Contracts
 {
-    internal interface ICommand {
+    internal interface IUserLoginCommand
+    {
 
-        Boolean Execute(Requisition requisition);
+        bool Execute(User user);
 
     }
 }

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MediaDaoTest.cs" />
+    <Compile Include="UserLoginCommandTest.cs" />
     <Compile Include="MediaInsertCommandTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

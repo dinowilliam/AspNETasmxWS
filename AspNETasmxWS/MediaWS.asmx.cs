@@ -1,7 +1,9 @@
-﻿using AspNETasmxWS.Entities;
-using System.Web.Services;
+﻿using System.Web.Services;
 
 namespace AspNETasmxWS {
+
+    using AspNETasmxWS.Commands;
+    using AspNETasmxWS.Entities;
 
     /// <summary>
     /// Summary description for We
@@ -16,23 +18,51 @@ namespace AspNETasmxWS {
 
     public class MediaWS : WebService    {
 
+        private MediaInsertCommand mediaInsertCommand;
+        private UserLoginCommand userLoginCommand;
+
+        public MediaWS() {
+
+            mediaInsertCommand = new MediaInsertCommand();
+            userLoginCommand = new UserLoginCommand();
+        }
+
         [WebMethod]
         public string SaveMedia(User user, Requisition requisition) {
+            
+            bool returnedValue = false;
 
-            return "Hello World";
+            if (userLoginCommand.Execute(user)){
+                returnedValue = mediaInsertCommand.Execute(requisition);
+            }
+
+            return returnedValue.ToString();
         }
 
 
         [WebMethod]
         public string GetMedia(User user, Media media) {
 
-            return "Hello World";
+            bool returnedValue = false;
+
+            if (userLoginCommand.Execute(user)){
+                
+            }
+
+            return returnedValue.ToString();
         }
 
         [WebMethod]
         public string DeleteMedia(User user, Media media) {
 
-            return "Hello World";
+            bool returnedValue = false;
+
+            if (userLoginCommand.Execute(user)){
+
+            }
+
+            return returnedValue.ToString();
+
         }
     }
 }
