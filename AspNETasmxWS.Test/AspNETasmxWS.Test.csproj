@@ -56,6 +56,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Unity Tests\MediaRemoveCommandTest.cs" />
+    <Compile Include="Unity Tests\MediaRetrieveCommandTests.cs" />
     <Compile Include="Unity Tests\UserServiceTest.cs" />
     <Compile Include="Unity Tests\UserDaoTest.cs" />
     <Compile Include="Unity Tests\MediaDaoTest.cs" />

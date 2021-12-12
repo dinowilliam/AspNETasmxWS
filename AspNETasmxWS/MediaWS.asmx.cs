@@ -4,6 +4,8 @@ namespace AspNETasmxWS {
 
     using AspNETasmxWS.Commands;
     using AspNETasmxWS.Entities;
+    using AspNETasmxWS.Responses;
+    using AspNETasmxWS.Responses.Contracts;
 
     /// <summary>
     /// Summary description for We
@@ -19,16 +21,22 @@ namespace AspNETasmxWS {
     public class MediaWS : WebService    {
 
         private MediaInsertCommand mediaInsertCommand;
+        private MediaRetrieveCommand mediaRetrieveCommand;
+        private MediaRemoveCommand mediaRemoveCommand;
         private UserLoginCommand userLoginCommand;
 
         public MediaWS() {
 
-            mediaInsertCommand = new MediaInsertCommand();
+            mediaInsertCommand = new MediaInsertCommand();     
+            mediaRetrieveCommand = new MediaRetrieveCommand();
+            mediaRemoveCommand = new MediaRemoveCommand();
             userLoginCommand = new UserLoginCommand();
         }
 
         [WebMethod]
-        public string SaveMedia(User user, Requisition requisition) {
+        public Response SaveMedia(User user, Requisition requisition) {
+           
+            Response response = new Response();
             
             bool returnedValue = false;
 
@@ -36,7 +44,9 @@ namespace AspNETasmxWS {
                 returnedValue = mediaInsertCommand.Execute(requisition);
             }
 
-            return returnedValue.ToString();
+            response.ResponseList.Add(returnedValue);
+
+            return response;
         }
 
 

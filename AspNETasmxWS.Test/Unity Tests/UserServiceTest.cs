@@ -51,8 +51,8 @@ namespace AspNETasmxWS.UnityTests.Test {
         
 
         [TestCleanup()]
-        public void Cleanup()
-        {
+        public void Cleanup() {
+
             userDaoMock = null;
             userService = null;            
             userMock = null;
