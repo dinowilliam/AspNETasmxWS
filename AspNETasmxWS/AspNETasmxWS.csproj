@@ -81,6 +81,8 @@
     <Compile Include="Entities\Media.cs" />
     <Compile Include="Entities\Requisition.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Infra\Services\Contracts\IMediaService.cs" />
+    <Compile Include="Infra\Services\Contracts\IUserService.cs" />
     <Compile Include="Infra\DataAccess\Contracts\IMediaDao.cs" />
     <Compile Include="Infra\DataAccess\MediaDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,7 +101,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Infra\Contracts\" />
     <Folder Include="Infra\Utilities\" />
   </ItemGroup>
   <PropertyGroup>

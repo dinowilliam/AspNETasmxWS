@@ -1,7 +1,7 @@
 ﻿using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AspNETasmxWS.Test {
+namespace AspNETasmxWS.UnityTests.Test {
 
     using AspNETasmxWS.Entities;
     using AspNETasmxWS.Infra.DataAccess;

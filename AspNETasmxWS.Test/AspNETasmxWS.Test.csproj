@@ -56,9 +56,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MediaDaoTest.cs" />
-    <Compile Include="UserLoginCommandTest.cs" />
-    <Compile Include="MediaInsertCommandTest.cs" />
+    <Compile Include="Unity Tests\MediaDaoTest.cs" />
+    <Compile Include="Unity Tests\UserLoginCommandTest.cs" />
+    <Compile Include="Unity Tests\MediaInsertCommandTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

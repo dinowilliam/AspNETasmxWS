@@ -1,11 +1,10 @@
 ﻿using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AspNETasmxWS.Test {
+namespace AspNETasmxWS.UnityTests.Test {
 
     using AspNETasmxWS.Commands;
     using AspNETasmxWS.Entities;
-    using System.Collections.Generic;
 
     [TestClass]
     public class UserLoginCommandTest {
