@@ -5,10 +5,10 @@ using System.Runtime.Serialization;
 namespace AspNETasmxWS.Responses
 {
     public class Response : IResponse {
-        public List<object> ResponseList { get => ResponseList; set => ResponseList = value; }
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context){
-            throw new System.NotImplementedException();
-        }
+        public bool Processed { get => Processed; set => Processed = value; }
+        public bool HasErrors { get => HasErrors; set => HasErrors = value; }
+        public List<object> ResponseList { get => ResponseList; set => ResponseList = value; }
+        
     }
 }

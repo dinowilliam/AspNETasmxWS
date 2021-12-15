@@ -98,7 +98,13 @@
       <DependentUpon>MediaWS.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Responses\Contracts\IMediaInsert.cs" />
+    <Compile Include="Responses\Contracts\IMediaRemove.cs" />
+    <Compile Include="Responses\Contracts\IMediaRetrieve.cs" />
+    <Compile Include="Responses\Contracts\IMessage.cs" />
     <Compile Include="Responses\Contracts\IResponse.cs" />
+    <Compile Include="Responses\Message.cs" />
+    <Compile Include="Responses\MediaInsert.cs" />
     <Compile Include="Responses\Response.cs" />
   </ItemGroup>
   <ItemGroup>
