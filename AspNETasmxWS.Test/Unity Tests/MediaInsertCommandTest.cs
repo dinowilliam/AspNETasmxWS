@@ -5,6 +5,7 @@ namespace AspNETasmxWS.UnityTests.Test {
 
     using AspNETasmxWS.Commands;
     using AspNETasmxWS.Entities;
+    using AspNETasmxWS.Responses.Contracts;
     using System.Collections.Generic;
 
     [TestClass]
@@ -23,13 +24,14 @@ namespace AspNETasmxWS.UnityTests.Test {
         [TestMethod]
         public void MediaInsertCommand_WhenExecuteInsert_IsFail() {
 
-            //Arrange                       
+            //Arrange
+            var mockResponse = A.Fake<IResponse>();
 
             //Act
             var assured = mediaInsertCommand.Execute(requisitionMock);
 
             //Assure
-            Assert.IsFalse(assured);
+            Assert.AreNotEqual(assured, mockResponse);
 
         }
 

@@ -35,16 +35,12 @@ namespace AspNETasmxWS {
 
         [WebMethod]
         public Response SaveMedia(User user, Requisition requisition) {
-           
+
             Response response = new Response();
-            
-            bool returnedValue = false;
-
+                       
             if (userLoginCommand.Execute(user)){
-                returnedValue = mediaInsertCommand.Execute(requisition);
-            }
-
-            response.ResponseList.Add(returnedValue);
+                response = (Response) mediaInsertCommand.Execute(requisition);
+            }            
 
             return response;
         }

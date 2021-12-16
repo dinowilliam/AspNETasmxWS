@@ -6,8 +6,8 @@ using System.Web;
 
 namespace AspNETasmxWS.Responses {
     public class MediaInsert : IMediaInsert {
-        public bool HasBeingInserted { get => HasBeingInserted; set => HasBeingInserted = value; }
-        public int ProtocolNumber { get => ProtocolNumber; set => ProtocolNumber = value; }
-        public List<IMessage> Messages { get => Messages; set => Messages = value; }
+        public bool HasBeingInserted { get; set ; }
+        public string Protocol { get; set; }
+        public List<IMessage> Messages { get; set ; }
     }
 }

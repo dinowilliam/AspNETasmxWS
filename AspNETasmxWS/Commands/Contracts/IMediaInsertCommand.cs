@@ -1,10 +1,11 @@
 ﻿using AspNETasmxWS.Entities;
+using AspNETasmxWS.Responses.Contracts;
 using System;
 
 namespace AspNETasmxWS.Commands.Contracts {
     internal interface IMediaInsertCommand {
 
-        bool Execute(Requisition requisition);
+        IResponse Execute(Requisition requisition);
 
     }
 }
